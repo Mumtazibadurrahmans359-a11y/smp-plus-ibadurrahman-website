@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SMP Plus Ibadurrahman</title>
+    <title>SMP Plus Ibadurrahman | Beranda</title>
     <meta
       name="description"
-      content="Website resmi SMP Plus Ibadurrahman."
+      content="Website resmi SMP Plus Ibadurrahman. Mendidik generasi unggul dengan akhlak dan prestasi."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,32 +15,38 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="topbar">
       <div class="container nav">
-        <div class="brand" aria-label="SMP Plus Ibadurrahman logo and name">
+        <a href="index.html" class="brand" aria-label="Beranda SMP Plus Ibadurrahman">
           <div class="logo">S+</div>
           <div>
             <h2>SMP Plus Ibadurrahman</h2>
           </div>
-        </div>
+        </a>
+
+        <button class="nav-toggle" aria-label="Buka menu navigasi" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
         <nav class="menu" aria-label="Navigasi utama">
-          <a href="#beranda">Beranda</a>
-          <a href="#profil">Profil</a>
-          <a href="#unggulan">Unggulan</a>
-          <a href="#fasilitas">Fasilitas</a>
-          <a href="#berita">Berita</a>
-          <a href="#kontak">Kontak</a>
+          <a href="index.html" class="active">Beranda</a>
+          <a href="profil.html">Profil</a>
+          <a href="program.html">Program</a>
+          <a href="berita.html">Berita</a>
+          <a href="kontak.html">Kontak</a>
         </nav>
 
-        <a class="btn btn-primary" href="#kontak">Daftar Sekarang</a>
+        <a class="btn btn-primary desktop-only" href="kontak.html">Daftar Sekarang</a>
       </div>
     </header>
 
     <main>
-      <section id="beranda" class="hero">
+      <section class="hero">
         <div class="container hero-grid">
           <div class="hero-content">
             <span class="badge">Mendidik Generasi Berkarakter</span>
@@ -52,8 +58,8 @@
             </p>
 
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#profil">Pelajari Lebih Lanjut</a>
-              <a class="btn btn-secondary" href="#kontak">Hubungi Kami</a>
+              <a class="btn btn-primary" href="profil.html">Pelajari Lebih Lanjut</a>
+              <a class="btn btn-secondary" href="kontak.html">Hubungi Kami</a>
             </div>
 
             <div class="stats" aria-label="Statistik sekolah">
@@ -72,8 +78,8 @@
             </div>
           </div>
 
-          <div class="hero-visual" aria-label="Ilustrasi siswa belajar">
-            <div class="card image-card">
+          <div class="hero-visual" aria-label="Photo sekolah">
+            <div class="image-card">
               <img
                 src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"
                 alt="Siswa belajar di sekolah"
@@ -83,7 +89,7 @@
         </div>
       </section>
 
-      <section id="profil" class="section">
+      <section class="section">
         <div class="container">
           <div class="section-heading">
             <span>Profil Sekolah</span>
@@ -125,7 +131,7 @@
         </div>
       </section>
 
-      <section id="unggulan" class="section alt">
+      <section class="section alt-bg">
         <div class="container">
           <div class="section-heading">
             <span>Keunggulan</span>
@@ -136,43 +142,31 @@
             <article class="feature-card">
               <div class="icon">📚</div>
               <h3>Akademik Unggul</h3>
-              <p>
-                Proses belajar yang fokus pada penguatan literasi, numerasi, dan
-                pemahaman konsep.
-              </p>
+              <p>Penguatan literasi, numerasi, dan pemahaman konsep secara menyeluruh.</p>
             </article>
 
             <article class="feature-card">
               <div class="icon">🧠</div>
               <h3>Pengembangan Potensi</h3>
-              <p>
-                Eksplorasi bakat melalui kegiatan ekstrakurikuler, kreativitas,
-                dan seminar inspiratif.
-              </p>
+              <p>Eksplorasi bakat melalui kegiatan ekstrakurikuler dan kreativitas.</p>
             </article>
 
             <article class="feature-card">
               <div class="icon">🤝</div>
               <h3>Karakter Islami</h3>
-              <p>
-                Pembentukan akhlak mulia melalui pembiasaan ibadah, akhlak, dan
-                disiplin hidup.
-              </p>
+              <p>Pembiasaan ibadah, akhlak mulia, dan disiplin hidup yang terarah.</p>
             </article>
 
             <article class="feature-card">
               <div class="icon">🌱</div>
-              <h3>Lingkungan Menyenangkan</h3>
-              <p>
-                Suasana sekolah yang aman, nyaman, dan memotivasi siswa untuk
-                berkembang secara optimal.
-              </p>
+              <h3>Lingkungan Kondusif</h3>
+              <p>Suasana sekolah yang aman, nyaman, dan memotivasi siswa berkembang.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="fasilitas" class="section">
+      <section class="section">
         <div class="container">
           <div class="section-heading">
             <span>Fasilitas</span>
@@ -182,34 +176,25 @@
           <div class="facility-grid">
             <div class="facility-item">
               <h3>Ruang Kelas Modern</h3>
-              <p>
-                Nyaman, terang, dan dilengkapi alat pembelajaran yang menunjang
-                proses belajar.
-              </p>
+              <p>Nyaman, terang, dan dilengkapi alat pembelajaran yang menunjang proses belajar.</p>
             </div>
             <div class="facility-item">
               <h3>Laboratorium</h3>
-              <p>
-                Memfasilitasi kegiatan praktik sains, teknologi, dan eksperimen.
-              </p>
+              <p>Memfasilitasi kegiatan praktik sains, teknologi, dan eksperimen.</p>
             </div>
             <div class="facility-item">
               <h3>Perpustakaan</h3>
-              <p>
-                Tempat membaca dan menumbuhkan minat literasi siswa.
-              </p>
+              <p>Tempat membaca dan menumbuhkan minat literasi siswa.</p>
             </div>
             <div class="facility-item">
               <h3>Lapangan & Olahraga</h3>
-              <p>
-                Mendorong kesehatan, kedisiplinan, dan semangat sportivitas.
-              </p>
+              <p>Mendorong kesehatan, kedisiplinan, dan semangat sportivitas.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="berita" class="section alt">
+      <section class="section alt-bg">
         <div class="container">
           <div class="section-heading">
             <span>Berita & Kegiatan</span>
@@ -218,47 +203,29 @@
 
           <div class="news-grid">
             <article class="news-card">
-              <img
-                src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80"
-                alt="Kegiatan sekolah"
-              />
+              <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80" alt="Pelatihan literasi" />
               <div class="news-content">
                 <span>12 September 2026</span>
                 <h3>Pelatihan Literasi dan Budaya Membaca</h3>
-                <p>
-                  Program peningkatan minat baca siswa dilakukan secara rutin
-                  setiap bulan.
-                </p>
+                <p>Program peningkatan minat baca siswa dilakukan secara rutin setiap bulan.</p>
               </div>
             </article>
 
             <article class="news-card">
-              <img
-                src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80"
-                alt="Kegiatan lomba"
-              />
+              <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" alt="Lomba sains" />
               <div class="news-content">
                 <span>21 Agustus 2026</span>
                 <h3>Lomba Sains dan Kreativitas Siswa</h3>
-                <p>
-                  Siswa tampil aktif dan berprestasi dalam kegiatan lomba yang
-                  diselenggarakan sekolah.
-                </p>
+                <p>Siswa tampil aktif dan berprestasi dalam kegiatan lomba yang diselenggarakan sekolah.</p>
               </div>
             </article>
 
             <article class="news-card">
-              <img
-                src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=800&q=80"
-                alt="Kegiatan olahraga"
-              />
+              <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=800&q=80" alt="Festival olahraga" />
               <div class="news-content">
                 <span>05 Juli 2026</span>
                 <h3>Festival Olahraga Sekolah</h3>
-                <p>
-                  Menumbuhkan semangat sportivitas, kebersamaan, dan kesehatan
-                  siswa.
-                </p>
+                <p>Menumbuhkan semangat sportivitas, kebersamaan, dan kesehatan siswa.</p>
               </div>
             </article>
           </div>
@@ -269,24 +236,18 @@
         <div class="container cta-box">
           <div>
             <span>Yuk Bergabung</span>
-            <h2>
-              Jadikan anak Anda tumbuh dengan ilmu, akhlak, dan semangat
-              prestasi.
-            </h2>
+            <h2>Jadikan anak Anda tumbuh dengan ilmu, akhlak, dan semangat prestasi.</h2>
           </div>
-          <a class="btn btn-primary" href="#kontak">Ajukan Pendaftaran</a>
+          <a class="btn btn-primary light" href="kontak.html">Ajukan Pendaftaran</a>
         </div>
       </section>
     </main>
 
-    <footer id="kontak" class="footer">
+    <footer class="footer">
       <div class="container footer-grid">
         <div>
           <h3>SMP Plus Ibadurrahman</h3>
-          <p>
-            Membangun generasi cerdas, berakhlak, dan siap menghadapi masa
-            depan.
-          </p>
+          <p>Membangun generasi cerdas, berakhlak, dan siap menghadapi masa depan.</p>
         </div>
 
         <div>
@@ -308,8 +269,288 @@
       </div>
 
       <div class="copyright">
-        <p>© 2026 SMP Plus Ibadurrahman. All Rights Reserved.</p>
+        <p>© <span id="year"></span> SMP Plus Ibadurrahman. All Rights Reserved.</p>
       </div>
     </footer>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

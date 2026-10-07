@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMP Plus Ibadurrahman | Kontak</title>
+    <meta
+      name="description"
+      content="Kontak dan pendaftaran SMP Plus Ibadurrahman."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <a href="index.html" class="brand" aria-label="Beranda SMP Plus Ibadurrahman">
+          <div class="logo">S+</div>
+          <div>
+            <h2>SMP Plus Ibadurrahman</h2>
+          </div>
+        </a>
+
+        <button class="nav-toggle" aria-label="Buka menu navigasi" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="menu" aria-label="Navigasi utama">
+          <a href="index.html">Beranda</a>
+          <a href="profil.html">Profil</a>
+          <a href="program.html">Program</a>
+          <a href="berita.html">Berita</a>
+          <a href="kontak.html" class="active">Kontak</a>
+        </nav>
+
+        <a class="btn btn-primary desktop-only" href="kontak.html">Daftar Sekarang</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container narrow">
+          <span class="badge">Kontak & Pendaftaran</span>
+          <h1>Hubungi kami untuk informasi lebih lanjut</h1>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <div class="contact-card">
+            <h3>Informasi Kontak</h3>
+            <ul>
+              <li><strong>Alamat:</strong> Jl. ...</li>
+              <li><strong>Email:</strong> info@smpplusibadurrahman.sch.id</li>
+              <li><strong>Telepon:</strong> (021) 0000-0000</li>
+              <li><strong>WhatsApp:</strong> +62 812-3456-7890</li>
+            </ul>
+          </div>
+
+          <form class="form-card" action="#" method="post">
+            <div class="input-group">
+              <label for="nama">Nama Lengkap</label>
+              <input id="nama" type="text" placeholder="Masukkan nama" />
+            </div>
+
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="Masukkan email" />
+            </div>
+
+            <div class="input-group">
+              <label for="pesan">Pesan</label>
+              <textarea id="pesan" rows="5" placeholder="Tulis pesan atau pertanyaan Anda"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>SMP Plus Ibadurrahman</h3>
+          <p>Membangun generasi cerdas, berakhlak, dan siap menghadapi masa depan.</p>
+        </div>
+
+        <div>
+          <h4>Kontak</h4>
+          <ul>
+            <li>Alamat: Jl. ...</li>
+            <li>Email: info@smpplusibadurrahman.sch.id</li>
+            <li>Telepon: (021) 0000-0000</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Jam Kerja</h4>
+          <ul>
+            <li>Senin - Jumat</li>
+            <li>07:30 - 15:30</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>© <span id="year"></span> SMP Plus Ibadurrahman. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
