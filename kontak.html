@@ -3,17 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SMP Plus Ibadurrahman | Kontak</title>
-    <meta
-      name="description"
-      content="Kontak dan pendaftaran SMP Plus Ibadurrahman."
-    />
+    <title>SMP Plus Ibadurrahman | Kontak & Pendaftaran</title>
+    <meta name="description" content="Hubungi dan daftar di SMP Plus Ibadurrahman. Informasi kontak, form pendaftaran, dan jadwal kunjungan sekolah." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
@@ -58,27 +52,32 @@
           <div class="contact-card">
             <h3>Informasi Kontak</h3>
             <ul>
-              <li><strong>Alamat:</strong> Jl. ...</li>
-              <li><strong>Email:</strong> info@smpplusibadurrahman.sch.id</li>
-              <li><strong>Telepon:</strong> (021) 0000-0000</li>
-              <li><strong>WhatsApp:</strong> +62 812-3456-7890</li>
+              <li><strong>📍 Alamat:</strong><br>Jl. Pendidikan No. 123, Jakarta</li>
+              <li><strong>✉️ Email:</strong><br><a href="mailto:info@smpplusibadurrahman.sch.id">info@smpplusibadurrahman.sch.id</a></li>
+              <li><strong>📞 Telepon:</strong><br><a href="tel:+621234567890">(021) 1234-5678</a></li>
+              <li><strong>💬 WhatsApp:</strong><br><a href="https://wa.me/628123456789">+62 812-3456-7890</a></li>
             </ul>
           </div>
 
-          <form class="form-card" action="#" method="post">
+          <form class="form-card" id="contactForm">
             <div class="input-group">
-              <label for="nama">Nama Lengkap</label>
-              <input id="nama" type="text" placeholder="Masukkan nama" />
+              <label for="nama">Nama Lengkap *</label>
+              <input id="nama" type="text" placeholder="Masukkan nama lengkap" required />
             </div>
 
             <div class="input-group">
-              <label for="email">Email</label>
-              <input id="email" type="email" placeholder="Masukkan email" />
+              <label for="email">Email *</label>
+              <input id="email" type="email" placeholder="Masukkan email Anda" required />
             </div>
 
             <div class="input-group">
-              <label for="pesan">Pesan</label>
-              <textarea id="pesan" rows="5" placeholder="Tulis pesan atau pertanyaan Anda"></textarea>
+              <label for="telepon">Nomor Telepon</label>
+              <input id="telepon" type="tel" placeholder="Masukkan nomor telepon" />
+            </div>
+
+            <div class="input-group">
+              <label for="pesan">Pesan *</label>
+              <textarea id="pesan" rows="5" placeholder="Tulis pesan atau pertanyaan Anda" required></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary">Kirim Pesan</button>
@@ -91,29 +90,32 @@
       <div class="container footer-grid">
         <div>
           <h3>SMP Plus Ibadurrahman</h3>
-          <p>Membangun generasi cerdas, berakhlak, dan siap menghadapi masa depan.</p>
+          <p>Membangun generasi cerdas, berakhlak, dan siap menghadapi masa depan dengan semangat dan integritas tinggi.</p>
         </div>
 
         <div>
           <h4>Kontak</h4>
           <ul>
-            <li>Alamat: Jl. ...</li>
+            <li>Alamat: Jl. Pendidikan No. 123, Jakarta</li>
             <li>Email: info@smpplusibadurrahman.sch.id</li>
-            <li>Telepon: (021) 0000-0000</li>
+            <li>Telepon: (021) 1234-5678</li>
+            <li>WhatsApp: +62 812-3456-7890</li>
           </ul>
         </div>
 
         <div>
-          <h4>Jam Kerja</h4>
+          <h4>Jam Operasional</h4>
           <ul>
             <li>Senin - Jumat</li>
-            <li>07:30 - 15:30</li>
+            <li>07:30 - 15:30 WIB</li>
+            <li>Sabtu: Acara Khusus</li>
+            <li>Minggu: Tutup</li>
           </ul>
         </div>
       </div>
 
       <div class="copyright">
-        <p>© <span id="year"></span> SMP Plus Ibadurrahman. All Rights Reserved.</p>
+        <p>&copy; <span id="year"></span> SMP Plus Ibadurrahman. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
       </div>
     </footer>
   </body>
